@@ -2,7 +2,7 @@ ARG BUILD_FROM=armhf-base-raspbian
 FROM ${BUILD_FROM}
 
 RUN echo "[INFO] Installing TVHeadend"
-RUN apt-get update && apk-get install tvheadend
+RUN sudo apt-get update && sudo apk-get install tvheadend
 
 RUN echo "[INFO] Starting TVHeadend"
 COPY run.sh /run.sh
