@@ -7,10 +7,12 @@ ln -sf /share/tvheadend/wg++/guide.xml ~/.wg++/guide.xml
 if  [ "$(ls -A /share/tvheadend/wg++)" ]; then
     echo "[INFO] Webgrab+ already installed"
 else
+    sudo apt-get install mono-runtime
+    sudo apt-get install mono-complete
     echo "[INFO] No webgrab+ installation found - Installing webgrab+"
     cd /tmp  && \
-    wget http://www.webgrabplus.com/sites/default/files/download/SW/V2.1.0/WebGrabPlus_V2.1_install.tar.gz  && \
-    tar -xvf WebGrabPlus_V2.1_install.tar.gz && rm WebGrabPlus_V2.1_install.tar.gz  && \
+    wget http://www.webgrabplus.com/sites/default/files/download/SW/V3.1.0/WebGrabPlus_V3.1_install.tar.gz  && \
+    tar -xvf WebGrabPlus_V3.1_install.tar.gz && rm WebGrabPlus_V3.1_install.tar.gz  && \
     mv .wg++/ /share/tvheadend/wg++  && \
     cd /share/tvheadend/wg++  && \
     ./install.sh
