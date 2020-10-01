@@ -1,5 +1,5 @@
 {
     "name": "TVHeadend Hass.io add-on",
-    "url": "https://github.com/tringler/hassio-tvheadend",
-    "maintainer": "Thomas Ringler <mail@thomas-ringler.de>"
+    "url": "https://github.com/evilknivel/hassio-tvheadend",
+    "maintainer": "Frank-Martin Holz <fmholz@gmail.com>"
 }
